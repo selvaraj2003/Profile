@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/images/star.png">
     <title>SELVARAJ - Software Developer</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <script src="assets/plugins/email.min.js"></script>
+    <link rel="stylesheet" href="assets/plugins/font_awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/plugins/font_awesome/css/all.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
@@ -20,17 +18,38 @@
         <div class="nav-container">
             <a href="#home" class="logo"><i class="fas fa-code"></i> SELVARAJ</a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">
+                        <i class="fas fa-home"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">
+                        <i class="fas fa-user"></i> About
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">
+                        <i class="fas fa-briefcase"></i> Experience
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">
+                        <i class="fas fa-cogs"></i> Skills
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <i class="fas fa-envelope"></i> Contact
+                    </a>
+                </li>
             </ul>
             <button class="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
     </nav>
+
 
     <!-- Home Section -->
     <section id="home">
@@ -49,7 +68,7 @@
                     With expertise in both frontend and backend, I transform complex ideas into
                     modern, user-friendly experiences that drive real impact.</p>
                 <a href="#contact" class="cta-button">Get In Touch</a>
-                <a href="./assets/CV/Selvaraj_Iyyappan_CV.pdf" download class="cta-button cv-button">
+                <a href="assets/images/SELVARAJ_RESUME.pdf" download class="cta-button cv-button">
                     <i class="fas fa-download"></i> Download CV
                 </a>
             </div>
@@ -369,13 +388,15 @@
                             <input type="text" name="from_name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="from_email" class="form-control" placeholder="Your Email" required>
+                            <input type="email" name="from_email" class="form-control" placeholder="Your Email"
+                                required>
                         </div>
                         <div class="form-group">
                             <input type="text" name="subject" class="form-control" placeholder="Subject">
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control" name="message" placeholder="Your Message" required></textarea>
+                            <textarea class="form-control" name="message" placeholder="Your Message"
+                                required></textarea>
                         </div>
                         <button type="submit" class="submit-btn">Send Message</button>
                         <div class="alert alert-success" id="successMessage">
