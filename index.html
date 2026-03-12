@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/images/star.png">
+  <title>Selvaraj Iyyappan — DevOps Engineer & Python Developer</title>
+
+  <meta name="description" content="Portfolio of Selvaraj Iyyappan — DevOps Engineer and Python Developer specializing in REST APIs, CI/CD pipelines, Docker, and cloud infrastructure.">
+  <meta name="keywords" content="Selvaraj Iyyappan, DevOps, Python Developer, REST API, Docker, CI/CD, Linux, Tamil Nadu">
+  <meta name="author" content="Selvaraj Iyyappan">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://selvarajprofile.netlify.app/">
+  <meta property="og:title" content="Selvaraj Iyyappan — DevOps Engineer & Python Developer">
+  <meta property="og:description" content="Portfolio of Selvaraj Iyyappan — Python Developer & DevOps Engineer.">
+
+  <!-- EmailJS -->
+  <script src="assets/plugins/email.min.js"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plugins/font_awesome/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">SELVARAJ</span>
+        <span class="logo-bracket">]</span>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+        <li class="nav-item"><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link"><i class="fas fa-cogs"></i> Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-code-branch"></i> Projects</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li class="nav-item">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="toggle-icon" id="themeIcon">☀️</span>
+            <span id="themeLabel">Light</span>
+          </button>
+        </li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme" style="display:none;">
+          <span id="themeIconMobile">☀️</span>
+        </button>
+        <button class="hamburger" aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="home">
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="./assets/videos/home_bg_video.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- <div class="hero-badge">Available for opportunities</div> -->
+        <h1 class="hero-title">
+          <span class="name-highlight">SELVARAJ</span><br>IYYAPPAN
+        </h1>
+        <div class="hero-role">
+          &gt; <span id="typewriter"></span><span class="cursor">_</span>
+        </div>
+        <p class="hero-description">
+          Python Developer & DevOps Engineer with 2+ years of experience building scalable backend solutions
+          and automating cloud infrastructure. Bridging the gap between development and operations.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> Get In Touch
+          </a>
+          <a href="assets/images/SELVA_RESUME_V4.pdf" download class="btn btn-outline">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Years Exp</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10+</div>
+            <div class="stat-label">Technologies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">1</div>
+            <div class="stat-label">Award</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Left: Text -->
+        <div class="about-text-wrap reveal">
+          <div class="section-tag"><i class="fas fa-user-astronaut"></i> About Me</div>
+          <h2 class="about-heading">
+            Crafting reliable<br><span>systems & solutions</span>
+          </h2>
+          <p class="about-paragraph">
+            Hello! I'm <strong>Selvaraj</strong>, a passionate <strong>Python Developer & DevOps Engineer</strong>
+            based in Tamil Nadu, India. I specialize in building robust REST APIs, automating workflows,
+            and deploying scalable infrastructure.
+          </p>
+          <p class="about-paragraph">
+            My journey started with a deep curiosity for problem-solving. Over 2+ years,
+            I've expanded into <strong>cloud computing</strong>, CI/CD automation, and container orchestration—
+            always learning and delivering production-grade systems.
+          </p>
+
+          <div class="info-grid">
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-graduation-cap"></i></div>
+              <div class="info-card-text">
+                <span class="info-card-label">Education</span>
+                <span class="info-card-value">B.Sc — Periyar Arts College, 2023</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="info-card-text">
+                <span class="info-card-label">Location</span>
+                <span class="info-card-value">Villupuram, Tamil Nadu, IN</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-card-text">
+                <span class="info-card-label">Email</span>
+                <span class="info-card-value">selvaraj1662003@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-icon"><i class="fas fa-phone"></i></div>
+              <div class="info-card-text">
+                <span class="info-card-label">Phone</span>
+                <span class="info-card-value">+91 7200524286</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-tags">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">FastAPI</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">AWS</span>
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">MySQL</span>
+          </div>
+        </div>
+
+        <!-- Right: Cards -->
+        <div class="reveal" style="display:flex;flex-direction:column;gap:1.5rem;">
+          <!-- Award Card -->
+          <div class="award-card">
+            <div class="award-header">
+              <div class="award-icon-wrap">🏆</div>
+              <div>
+                <div class="award-title">Rookie of the Year</div>
+                <div class="award-sub">Kosoft IT Solutions · 2024</div>
+              </div>
+            </div>
+            <p class="award-desc">
+              Recognized for outstanding performance, rapid learning, and consistently delivering
+              strong results during the first year at Kosoft IT Solutions.
+            </p>
+          </div>
+
+          <!-- Certifications Card -->
+          <div class="award-card">
+            <div class="award-header">
+              <div class="award-icon-wrap" style="background:rgba(104,211,145,0.1);border-color:rgba(104,211,145,0.3);color:var(--accent-green);">📜</div>
+              <div>
+                <div class="award-title">Certifications</div>
+                <div class="award-sub">Professional Development</div>
+              </div>
+            </div>
+            <div style="display:flex;gap:0.75rem;flex-direction:column;margin-top:0.5rem;">
+              <div style="display:flex;align-items:center;gap:0.75rem;color:var(--text-secondary);font-size:0.92rem;">
+                <i class="fas fa-check-circle" style="color:var(--accent-green);"></i> Python Programming Certification
+              </div>
+              <div style="display:flex;align-items:center;gap:0.75rem;color:var(--text-secondary);font-size:0.92rem;">
+                <i class="fas fa-check-circle" style="color:var(--accent-green);"></i> React.js Internship Certification
+              </div>
+            </div>
+          </div>
+
+          <!-- Soft Skills Card -->
+          <div class="award-card">
+            <div class="award-header">
+              <div class="award-icon-wrap" style="background:rgba(159,122,234,0.1);border-color:rgba(159,122,234,0.3);color:var(--accent-purple);">💡</div>
+              <div>
+                <div class="award-title">Soft Skills</div>
+                <div class="award-sub">Professional Strengths</div>
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.5rem;">
+              <span class="tech-tag" style="color:var(--accent-purple);border-color:rgba(159,122,234,0.3);background:rgba(159,122,234,0.08);">Problem-solving</span>
+              <span class="tech-tag" style="color:var(--accent-purple);border-color:rgba(159,122,234,0.3);background:rgba(159,122,234,0.08);">Teamwork</span>
+              <span class="tech-tag" style="color:var(--accent-purple);border-color:rgba(159,122,234,0.3);background:rgba(159,122,234,0.08);">Adaptability</span>
+              <span class="tech-tag" style="color:var(--accent-purple);border-color:rgba(159,122,234,0.3);background:rgba(159,122,234,0.08);">Quick Learner</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience">
+    <div class="container">
+      <div class="exp-header reveal">
+        <div class="section-tag"><i class="fas fa-briefcase"></i> Career</div>
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <p class="section-subtitle">My professional journey building systems and solutions.</p>
+      </div>
+
+      <div class="tabs reveal">
+        <button class="tab-button active" data-tab="professional">
+          <i class="fas fa-laptop-code"></i> Professional
+        </button>
+        <button class="tab-button" data-tab="education">
+          <i class="fas fa-graduation-cap"></i> Education
+        </button>
+      </div>
+
+      <!-- Professional Tab -->
+      <div class="tab-content active" id="professional-tab">
+        <div class="experience-grid">
+          <div class="exp-card reveal">
+            <div class="exp-card-top">
+              <div class="exp-company">Kosoft IT Solutions</div>
+              <div class="exp-date">Aug 2025 – Present</div>
+            </div>
+            <div class="exp-position">DevOps Engineer</div>
+            <div class="exp-desc">
+              <ul>
+                <li>Setting up CI/CD pipelines, build automation and deployment workflows.</li>
+                <li>Managing and configuring Linux servers for application deployment.</li>
+                <li>Hands-on work with Docker, Kubernetes, and cloud architecture.</li>
+                <li>Supporting teams with troubleshooting, log analysis, and environment configuration.</li>
+              </ul>
+            </div>
+            <div class="tech-tags" style="margin-top:1rem;">
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">CI/CD</span>
+              <span class="tech-tag">Linux</span>
+              <span class="tech-tag">Kubernetes</span>
+            </div>
+          </div>
+
+          <div class="exp-card reveal">
+            <div class="exp-card-top">
+              <div class="exp-company">Kosoft IT Solutions</div>
+              <div class="exp-date">Apr 2024 – Aug 2025</div>
+            </div>
+            <div class="exp-position">Software Developer (Python)</div>
+            <div class="exp-desc">
+              <ul>
+                <li>Developed REST APIs for application modules using Python & Django.</li>
+                <li>Built automation scripts to reduce manual work and improve efficiency.</li>
+                <li>Integrated backend services using HTTP/JSON workflows.</li>
+                <li>Performed debugging, testing, and improving API performance.</li>
+              </ul>
+            </div>
+            <div class="tech-tags" style="margin-top:1rem;">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Django REST</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Tab -->
+      <div class="tab-content" id="education-tab">
+        <div class="experience-grid">
+          <div class="exp-card reveal">
+            <div class="edu-icon"><i class="fas fa-university"></i></div>
+            <div class="exp-card-top">
+              <div class="exp-company">Periyar Arts College</div>
+              <div class="exp-date">2020 – 2023</div>
+            </div>
+            <div class="exp-position">Bachelor of Science</div>
+            <p class="exp-desc">Completed undergraduate education with a focus on computer science fundamentals, programming, and problem-solving. Built the foundation for a career in software development.</p>
+          </div>
+
+          <div class="exp-card reveal" style="background:linear-gradient(135deg, var(--bg-card) 60%, rgba(99,179,237,0.04) 100%);">
+            <div class="edu-icon" style="background:rgba(246,173,85,0.1);border-color:rgba(246,173,85,0.25);color:var(--accent-orange);"><i class="fas fa-trophy"></i></div>
+            <div class="exp-card-top">
+              <div class="exp-company">Kosoft IT Solutions</div>
+              <div class="exp-date">2024</div>
+            </div>
+            <div class="exp-position">Rookie of the Year Award</div>
+            <p class="exp-desc">Recognized for outstanding performance, rapid learning, and delivering strong results in the first year of professional career. A milestone that validated hard work and dedication.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="container">
+      <div class="skills-header reveal">
+        <div class="section-tag"><i class="fas fa-cogs"></i> Expertise</div>
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with to build and ship products.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming & Backend -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-blue"><i class="fas fa-code"></i></div>
+            <div class="skill-card-title">Programming & Backend</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-blue" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Django</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-blue" data-width="85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Django REST API</span>
+              <span class="skill-pct">90%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-blue" data-width="90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">FastAPI</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-blue" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-blue" data-width="70%"></div></div>
+          </div>
+        </div>
+
+        <!-- DevOps & Tools -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-purple"><i class="fas fa-server"></i></div>
+            <div class="skill-card-title">DevOps & Tools</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-purple" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Docker</span>
+              <span class="skill-pct">60%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-purple" data-width="60%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">GitHub Actions (CI/CD)</span>
+              <span class="skill-pct">65%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-purple" data-width="65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">AWS</span>
+              <span class="skill-pct">55%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-purple" data-width="55%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Nginx</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-purple" data-width="70%"></div></div>
+          </div>
+        </div>
+
+        <!-- OS & System -->
+        <div class="skill-card reveal">
+          <div class="skill-card-header">
+            <div class="skill-card-icon icon-green"><i class="fab fa-linux"></i></div>
+            <div class="skill-card-title">OS & System</div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Linux (Ubuntu/CentOS)</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-green" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Windows Server</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-green" data-width="80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Systemctl Services</span>
+              <span class="skill-pct">75%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-green" data-width="75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Log Monitoring</span>
+              <span class="skill-pct">70%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-green" data-width="70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-row">
+              <span class="skill-name">Azure (Learning)</span>
+              <span class="skill-pct">50%</span>
+            </div>
+            <div class="skill-track"><div class="skill-fill fill-green" data-width="50%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="container">
+      <div class="projects-header reveal">
+        <div class="section-tag"><i class="fas fa-code-branch"></i> Work</div>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-subtitle">A selection of things I've built.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-emoji">🤖</div>
+            <div class="project-links">
+              <a href="https://github.com/selvaraj2003/" target="_blank" class="project-link-btn" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link-btn" title="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">AI Chat Assistant</div>
+          <p class="project-desc">
+            A full-stack AI Chat Assistant featuring user authentication, real-time AI responses,
+            and persistent chat history. Built with React.js frontend, FastAPI backend,
+            Ollama Cloud API integration, and MySQL for data persistence.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">React.js</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">Ollama API</span>
+            <span class="stack-tag">MySQL</span>
+            <span class="stack-tag">Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-emoji">💾</div>
+            <div class="project-links">
+              <a href="https://github.com/selvaraj2003" target="_blank" class="project-link-btn" title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">PyBackup — Open Source Library</div>
+          <p class="project-desc">
+            An open-source Python library for Linux system backup automation. Supports file and
+            database backups with YAML-based configuration for easy setup. Designed for
+            reliability and simplicity in production Linux environments.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Linux</span>
+            <span class="stack-tag">YAML</span>
+            <span class="stack-tag">Automation</span>
+            <span class="stack-tag">Open Source</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-card-top">
+            <div class="project-emoji">🌐</div>
+            <div class="project-links">
+              <a href="https://selvarajprofile.netlify.app" target="_blank" class="project-link-btn" title="Live">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">Personal Portfolio Website</div>
+          <p class="project-desc">
+            This responsive portfolio website with dark/light theme switching, smooth animations,
+            typewriter effects, and EmailJS-powered contact form. Fully hand-coded with semantic HTML,
+            modern CSS, and vanilla JavaScript.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">HTML5</span>
+            <span class="stack-tag">CSS3</span>
+            <span class="stack-tag">JavaScript</span>
+            <span class="stack-tag">EmailJS</span>
+            <span class="stack-tag">Netlify</span>
+          </div>
+        </div>
+
+        <!-- <div class="project-card reveal" style="background:linear-gradient(135deg, var(--bg-card) 60%, rgba(99,179,237,0.03) 100%);">
+          <div class="project-card-top">
+            <div class="project-emoji">⚙️</div>
+            <div class="project-links">
+              <a href="https://github.com/selvaraj2003?tab=repositories" target="_blank" class="project-link-btn">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+          <div class="project-title">CI/CD Pipeline Automation</div>
+          <p class="project-desc">
+            Built automated CI/CD pipelines using GitHub Actions for Python applications.
+            Includes Docker containerization, container registry push/pull,
+            automated testing, and deployment to Linux servers via SSH.
+          </p>
+          <div class="project-stack">
+            <span class="stack-tag">GitHub Actions</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">Docker Hub</span>
+            <span class="stack-tag">Linux</span>
+            <span class="stack-tag">SSH</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-header reveal">
+        <div class="section-tag"><i class="fas fa-envelope"></i> Contact</div>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to connect? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Card -->
+        <div class="contact-info-card reveal">
+          <div class="contact-info-title">Let's talk</div>
+          <p class="contact-info-sub">Open to new opportunities and collaborations.</p>
+          <div class="contact-info-items">
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <div class="contact-info-item-label">Location</div>
+                <div class="contact-info-item-value">58 Cuddalore Main Rd, Villupuram, TN — 605106</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <div class="contact-info-item-label">Phone</div>
+                <div class="contact-info-item-value">+91 7200524286</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <div class="contact-info-item-label">Email</div>
+                <div class="contact-info-item-value">selvaraj1662003@gmail.com</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <div class="contact-info-item-label">Website</div>
+                <div class="contact-info-item-value">selvarajprofile.netlify.app</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/selva3/" target="_blank" class="social-btn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/selvaraj2003?tab=repositories" target="_blank" class="social-btn" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:selvaraj1662003@gmail.com" class="social-btn" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form Card -->
+        <div class="contact-form-card reveal">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" name="from_name" class="form-control" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" name="from_email" class="form-control" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Subject</label>
+              <input type="text" name="subject" class="form-control" placeholder="How can I help you?">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea name="message" class="form-control" placeholder="Tell me about your project or idea..." required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+            <div class="alert alert-success" id="successMessage">
+              <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+            </div>
+            <div class="alert alert-error" id="errorMessage">
+              <i class="fas fa-exclamation-circle"></i> Oops! Something went wrong. Please try again.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <video autoplay muted loop playsinline class="footer-video">
+      <source src="./assets/videos/home_bg_video.mp4" type="video/mp4">
+    </video>
+    <div class="footer-inner">
+      <a href="#home" class="footer-brand">
+        <span style="color:var(--accent-cyan);">[</span>SELVARAJ<span style="color:var(--accent-cyan);">]</span>
+      </a>
+      <p class="footer-copy">© 2025 Selvaraj Iyyappan. Crafted with <span>♥</span> in Tamil Nadu.</p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/selva3/" target="_blank" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/selvaraj2003?tab=repositories" target="_blank" class="social-btn" title="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:selvaraj1662003@gmail.com" class="social-btn" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="./assets/js/scripts.js"></script>
+
+  <!-- Mobile theme toggle sync -->
+  <script>
+    // Make mobile theme toggle work
+    const mobileTog = document.getElementById('themeToggleMobile');
+    if (mobileTog) {
+      mobileTog.style.display = 'flex';
+      mobileTog.addEventListener('click', () => {
+        document.getElementById('themeToggle').click();
+        document.getElementById('themeIconMobile').textContent = 
+          document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+      });
+    }
+  </script>
+</body>
+</html>
