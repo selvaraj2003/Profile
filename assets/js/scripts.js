@@ -6,37 +6,37 @@
 ═══════════════════════════════════════════════════ */
 const SKILLS = [
   // Programming & Backend
-  { name:'Python',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg',       accent:'#3776ab' },
-  { name:'Django',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg',           accent:'#00e5a0', bg:'rgba(0,229,160,.06)' },
-  { name:'FastAPI',     img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',      accent:'#009688' },
+  { name:'Python',      img:'assets/images/icons/python.svg',       accent:'#3776ab' },
+  { name:'Django',      img:'assets/images/icons/django.svg',       accent:'#00e5a0', bg:'rgba(0,229,160,.06)' },
+  { name:'FastAPI',     img:'assets/images/icons/fastapi.svg',      accent:'#009688' },
   { name:'REST API',    img:'', accent:'#5eadf7',
     svg:`<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="12" fill="rgba(94,173,247,.12)"/><text x="50%" y="27" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace" font-weight="bold">{REST}</text><text x="50%" y="41" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace">API</text></svg>` },
   { name:'JSON',        img:'', accent:'#f0db4f',
     svg:`<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="12" fill="rgba(240,219,79,.1)"/><text x="50%" y="36" text-anchor="middle" font-size="15" fill="#f0db4f" font-family="monospace" font-weight="bold">JSON</text></svg>` },
   // Database
-  { name:'MySQL',       img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',          accent:'#4479a1' },
-  // DevOps / VCS
-  { name:'Git',         img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',              accent:'#f05032' },
-  { name:'GitHub',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',        accent:'#e0e0e0', bg:'rgba(255,255,255,.04)' },
-  { name:'Docker',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',        accent:'#2496ed' },
-  { name:'Azure DevOps',img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg', accent:'#0078d4' },
-  // Cloud
-  { name:'AWS',         img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg', accent:'#ff9900' },
-  { name:'Azure',       img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',          accent:'#0078d4' },
-  // OS & System
-  { name:'Linux',       img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',          accent:'#fcc624' },
-  { name:'Ubuntu',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/ubuntu/ubuntu-original.svg',        accent:'#e95420' },
-  { name:'CentOS',      img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/centos/centos-original.svg',        accent:'#932279' },
-  { name:'Windows',     img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg',  accent:'#0078d4' },
-  // Monitoring
-  { name:'Prometheus',  img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prometheus/prometheus-original.svg',accent:'#e6522c' },
-  { name:'Grafana',     img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grafana/grafana-original.svg',      accent:'#f46800' },
-  { name:'Nginx',       img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nginx/nginx-original.svg',          accent:'#009639' },
-  { name:'Cron/Scripts',img:'', accent:'#34d399',
-    svg:`<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="12" fill="rgba(52,211,153,.1)"/><text x="50%" y="25" text-anchor="middle" font-size="8" fill="#34d399" font-family="monospace">#!/bin</text><text x="50%" y="37" text-anchor="middle" font-size="8" fill="#34d399" font-family="monospace">/bash</text><text x="50%" y="49" text-anchor="middle" font-size="7" fill="#34d399" font-family="monospace">cron</text></svg>` },
-  // Tools
-  { name:'VS Code',     img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg',        accent:'#007acc' },
-  { name:'Postman',     img:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg',      accent:'#ff6c37' },
+  { name:'MySQL',       img:'assets/images/icons/mysql.svg',          accent:'#4479a1' },
+  // DevOps & Cloud
+  { name:'Docker',      img:'assets/images/icons/docker.svg',        accent:'#2496ed' },
+  { name:'Kubernetes',  img:'assets/images/icons/kubernetes.svg',   accent:'#326ce5' },
+  { name:'Jenkins',     img:'assets/images/icons/jenkins.svg',      accent:'#d24939' },
+  { name:'Terraform',   img:'assets/images/icons/terraform.svg',    accent:'#7b42bc' },
+  { name:'Ansible',     img:'assets/images/icons/ansible.svg',      accent:'#ee0000' },
+  { name:'Azure DevOps',img:'assets/images/icons/azuredevops.svg',   accent:'#0078d4' },
+  { name:'AWS',         img:'assets/images/icons/aws.svg',          accent:'#ff9900' },
+  { name:'Azure',       img:'assets/images/icons/azure.svg',        accent:'#0078d4' },
+  // Monitoring & Server
+  { name:'Prometheus',  img:'assets/images/icons/prometheus.svg',   accent:'#e6522c' },
+  { name:'Grafana',     img:'assets/images/icons/grafana.svg',      accent:'#f46800' },
+  { name:'Nginx',       img:'assets/images/icons/nginx.svg',          accent:'#009639' },
+  { name:'Linux',       img:'assets/images/icons/linux.svg',          accent:'#fcc624' },
+  { name:'Ubuntu',      img:'assets/images/icons/ubuntu.svg',        accent:'#e95420' },
+  // Tools & Others
+  { name:'VS Code',     img:'assets/images/icons/vscode.svg',        accent:'#007acc' },
+  { name:'Postman',     img:'assets/images/icons/postman.svg',      accent:'#ff6c37' },
+  { name:'JSON',        img:'assets/images/icons/json.svg',            accent:'#f0db4f' },
+  { name:'YAML',        img:'assets/images/icons/yaml.svg',               accent:'#cb171e' },
+  { name:'REST API',    img:'', accent:'#5eadf7',
+    svg:`<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="12" fill="rgba(94,173,247,.12)"/><text x="50%" y="27" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace" font-weight="bold">{REST}</text><text x="50%" y="41" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace">API</text></svg>` },
 ];
 
 const FLOAT_DUR   = [3.8,4.2,4.6,3.5,4.4,3.9,4.1,3.6,4.7,4.0,3.7,4.3,4.8,3.4,4.5,4.9,3.3,4.0,3.7,4.6,4.2,3.8];
@@ -86,19 +86,15 @@ function buildSkills() {
 
 /* ═══════════════════════════════════════════════════
    2. CANVAS ANIMATED BACKGROUND
-   Layers:
-     A) Floating gradient orbs (slow drift)
-     B) Particle constellation (nodes + connecting lines)
-     C) Slow-moving geometric hex grid scanlines
 ═══════════════════════════════════════════════════ */
 function initBgCanvas() {
   const canvas = document.getElementById('bgCanvas');
   if (!canvas) return;
   const ctx = canvas.getContext('2d');
   let W, H, raf;
-  let isDark = document.documentElement.getAttribute('data-theme') !== 'light';
+  let isDark = false;
 
-  /* ── Palette (updates with theme) ── */
+  /* ── Palette ── */
   function getPalette() {
     return isDark
       ? { orb1:'94,173,247', orb2:'192,132,252', orb3:'52,211,153', orb4:'244,114,182',
@@ -166,15 +162,11 @@ function initBgCanvas() {
       n.x += n.vx; n.y += n.vy;
       if (n.x < 0) n.x = W; if (n.x > W) n.x = 0;
       if (n.y < 0) n.y = H; if (n.y > H) n.y = 0;
-
-      /* node dot */
       ctx.beginPath();
       ctx.arc(n.x, n.y, n.r, 0, Math.PI*2);
       ctx.fillStyle = `rgba(${p.nodeClr},${isDark?.55:.45})`;
       ctx.fill();
     });
-
-    /* connecting lines */
     for (let i = 0; i < nodes.length; i++) {
       for (let j = i+1; j < nodes.length; j++) {
         const dx = nodes[i].x-nodes[j].x;
@@ -193,18 +185,15 @@ function initBgCanvas() {
     }
   }
 
-  /* ── Hex scan lines (slow horizontal sweep) ── */
+  /* ── Hex scan lines ── */
   let hexOffset = 0;
   const HEX_SIZE = 60;
-
   function drawHex(p) {
     hexOffset = (hexOffset + .15) % (HEX_SIZE * Math.sqrt(3));
     const cols = Math.ceil(W / (HEX_SIZE * 1.5)) + 2;
     const rows = Math.ceil(H / (HEX_SIZE * Math.sqrt(3))) + 2;
-
     ctx.strokeStyle = `rgba(${p.hexClr},${isDark?.025:.018})`;
     ctx.lineWidth = .6;
-
     for (let row = -1; row < rows; row++) {
       for (let col = -1; col < cols; col++) {
         const cx = col * HEX_SIZE * 1.5 + (hexOffset % (HEX_SIZE*1.5)) - HEX_SIZE;
@@ -213,7 +202,6 @@ function initBgCanvas() {
       }
     }
   }
-
   function hexPath(cx, cy, size) {
     ctx.beginPath();
     for (let a = 0; a < 6; a++) {
@@ -226,7 +214,6 @@ function initBgCanvas() {
     ctx.stroke();
   }
 
-  /* ── Main loop ── */
   function loop() {
     ctx.clearRect(0, 0, W, H);
     const p = getPalette();
@@ -235,40 +222,12 @@ function initBgCanvas() {
     drawParticles(p);
     raf = requestAnimationFrame(loop);
   }
-
   loop();
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) cancelAnimationFrame(raf);
     else loop();
   });
-
-  /* expose theme-update hook */
   window._bgUpdateTheme = (dark) => { isDark = dark; };
-}
-
-/* ═══════════════════════════════════════════════════
-   3. THEME TOGGLE
-═══════════════════════════════════════════════════ */
-function initTheme() {
-  const html   = document.documentElement;
-  const btn    = document.getElementById('themeToggle');
-  const lbl    = document.getElementById('themeLabel');
-  if (!btn) return;
-
-  const saved = localStorage.getItem('portfolio-theme') || 'dark';
-  applyTheme(saved);
-
-  btn.addEventListener('click', () => {
-    const next = html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    applyTheme(next);
-    localStorage.setItem('portfolio-theme', next);
-  });
-
-  function applyTheme(theme) {
-    html.setAttribute('data-theme', theme);
-    lbl.textContent = theme === 'dark' ? 'Light' : 'Dark';
-    if (window._bgUpdateTheme) window._bgUpdateTheme(theme === 'dark');
-  }
 }
 
 /* ═══════════════════════════════════════════════════
@@ -298,7 +257,7 @@ function initCounters() {
     entries.forEach(e => {
       if (!e.isIntersecting) return;
       const el = e.target, end = parseInt(el.dataset.count,10);
-      let cur=0; const inc=end/(1200/(1000/60));
+      let cur=0; const inc=end/60;
       const t = setInterval(()=>{ cur+=inc; if(cur>=end){el.textContent=end;clearInterval(t);}else{el.textContent=Math.floor(cur);} }, 1000/60);
       obs.unobserve(el);
     });
@@ -307,32 +266,48 @@ function initCounters() {
 }
 
 /* ═══════════════════════════════════════════════════
-   6. NAVBAR
+   6. NAVBAR & DRAWER
 ═══════════════════════════════════════════════════ */
 function initNav() {
-  const nav      = document.getElementById('navbar');
-  const ham      = document.getElementById('hamburger');
-  const links    = document.getElementById('navLinks');
+  const nav   = document.getElementById('navbar');
+  const ham   = document.getElementById('hamburger');
+  const links = document.getElementById('navLinks');
   const allLinks = document.querySelectorAll('.nav-links a');
   const sections = document.querySelectorAll('section[id]');
 
+  const closeMenu = () => {
+    links.classList.remove('open');
+    if (ham) ham.innerHTML = '<i class="fas fa-bars"></i>';
+    document.body.style.overflow = '';
+  };
+
+  const toggleMenu = (e) => {
+    e.stopPropagation();
+    const open = links.classList.toggle('open');
+    if (ham) ham.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    document.body.style.overflow = open ? 'hidden' : '';
+  };
+
+  if (ham) ham.addEventListener('click', toggleMenu);
+
+  // Close when clicking any link inside
+  links.addEventListener('click', e => { if (e.target.closest('a')) closeMenu(); });
+
+  // Close when clicking outside
+  document.addEventListener('click', e => {
+    if (links.classList.contains('open') && !links.contains(e.target) && !ham.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
   const onScroll = () => {
-    nav.classList.toggle('scrolled', window.scrollY > 60);
+    nav.classList.toggle('scrolled', window.scrollY > 50);
     let cur='';
-    sections.forEach(s=>{ if(pageYOffset>=s.offsetTop-220) cur=s.id; });
+    sections.forEach(s=>{ if(window.pageYOffset>=s.offsetTop-200) cur=s.id; });
     allLinks.forEach(a=>a.classList.toggle('active', a.getAttribute('href')===`#${cur}`));
   };
   window.addEventListener('scroll', onScroll, {passive:true});
   onScroll();
-
-  ham.addEventListener('click',()=>{
-    const open = links.classList.toggle('open');
-    ham.innerHTML = open ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-  });
-  allLinks.forEach(a=>a.addEventListener('click',()=>{
-    links.classList.remove('open');
-    ham.innerHTML='<i class="fas fa-bars"></i>';
-  }));
 }
 
 /* ═══════════════════════════════════════════════════
@@ -375,49 +350,45 @@ function initSmooth() {
 }
 
 /* ═══════════════════════════════════════════════════
-   10. CONTACT FORM  (stub — wire EmailJS)
+   10. CONTACT FORM
 ═══════════════════════════════════════════════════ */
 function initForm() {
-  (function() {
-    emailjs.init("Yos2z9MYp7xRMHCrC");
-  })();
-
   const contactForm = document.getElementById('contactForm');
-  const successMessage = document.getElementById('successMessage');
-  const errorMessage = document.getElementById('errorMessage');
+  if (!contactForm) return;
+  emailjs.init("Yos2z9MYp7xRMHCrC");
 
-  if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const btn = this.querySelector('.f-submit');
-      btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-      btn.disabled = true;
+  contactForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.f-submit');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+    
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
 
-      emailjs.sendForm("service_kdejste", "template_tuos09s", this)
-        .then(() => {
-          successMessage.style.display = 'block';
-          errorMessage.style.display = 'none';
-          contactForm.reset();
-          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-          btn.disabled = false;
-          setTimeout(() => { successMessage.style.display = 'none'; }, 5000);
-        })
-        .catch(() => {
-          errorMessage.style.display = 'block';
-          successMessage.style.display = 'none';
-          btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
-          btn.disabled = false;
-        });
-    });
-  }
+    emailjs.sendForm("service_kdejste", "template_tuos09s", this)
+      .then(() => {
+        successMessage.style.display = 'block';
+        errorMessage.style.display = 'none';
+        contactForm.reset();
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        btn.disabled = false;
+        setTimeout(() => { successMessage.style.display = 'none'; }, 5000);
+      })
+      .catch(() => {
+        errorMessage.style.display = 'block';
+        successMessage.style.display = 'none';
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        btn.disabled = false;
+      });
+  });
 }
 
 /* ═══════════════════════════════════════════════════
    BOOT
 ═══════════════════════════════════════════════════ */
 document.addEventListener('DOMContentLoaded',()=>{
-  initTheme();       // first — so canvas reads correct theme
-  buildSkills();     // before reveal observer so grid items exist
+  buildSkills();
   initBgCanvas();
   initTypewriter();
   initCounters();
