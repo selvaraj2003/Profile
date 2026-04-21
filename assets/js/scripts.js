@@ -33,10 +33,6 @@ const SKILLS = [
   // Tools & Others
   { name:'VS Code',     img:'assets/images/icons/vscode.svg',        accent:'#007acc' },
   { name:'Postman',     img:'assets/images/icons/postman.svg',      accent:'#ff6c37' },
-  { name:'JSON',        img:'assets/images/icons/json.svg',            accent:'#f0db4f' },
-  { name:'YAML',        img:'assets/images/icons/yaml.svg',               accent:'#cb171e' },
-  { name:'REST API',    img:'', accent:'#5eadf7',
-    svg:`<svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect width="60" height="60" rx="12" fill="rgba(94,173,247,.12)"/><text x="50%" y="27" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace" font-weight="bold">{REST}</text><text x="50%" y="41" text-anchor="middle" font-size="9" fill="#5eadf7" font-family="monospace">API</text></svg>` },
 ];
 
 const FLOAT_DUR   = [3.8,4.2,4.6,3.5,4.4,3.9,4.1,3.6,4.7,4.0,3.7,4.3,4.8,3.4,4.5,4.9,3.3,4.0,3.7,4.6,4.2,3.8];
@@ -127,17 +123,15 @@ function initBgCanvas() {
       if (o.x < -o.wr/2 || o.x > W+o.wr/2) o.dx *= -1;
       if (o.y < -o.hr/2 || o.y > H+o.hr/2) o.dy *= -1;
 
-      const g = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.wr/2);
-      g.addColorStop(0,   `rgba(${orbs[i]},${ isDark ? 0.14 : 0.10})`);
-      g.addColorStop(0.5, `rgba(${orbs[i]},${ isDark ? 0.06 : 0.04})`);
+      const g = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.wr/1.8);
+      g.addColorStop(0,   `rgba(${orbs[i]},${ isDark ? 0.16 : 0.12})`);
+      g.addColorStop(0.4, `rgba(${orbs[i]},${ isDark ? 0.07 : 0.05})`);
       g.addColorStop(1,   `rgba(${orbs[i]},0)`);
-      ctx.save();
-      ctx.filter = 'blur(60px)';
+      
       ctx.beginPath();
-      ctx.ellipse(o.x, o.y, o.wr/2, o.hr/2, 0, 0, Math.PI*2);
+      ctx.ellipse(o.x, o.y, o.wr/1.8, o.hr/1.8, 0, 0, Math.PI*2);
       ctx.fillStyle = g;
       ctx.fill();
-      ctx.restore();
     });
   }
 
@@ -188,27 +182,32 @@ function initBgCanvas() {
   /* ── Hex scan lines ── */
   let hexOffset = 0;
   const HEX_SIZE = 60;
+  const HEX_ANGLE = Math.PI / 3;
+  
   function drawHex(p) {
-    hexOffset = (hexOffset + .15) % (HEX_SIZE * Math.sqrt(3));
+    hexOffset = (hexOffset + .15) % (HEX_SIZE * 1.5);
     const cols = Math.ceil(W / (HEX_SIZE * 1.5)) + 2;
-    const rows = Math.ceil(H / (HEX_SIZE * Math.sqrt(3))) + 2;
-    ctx.strokeStyle = `rgba(${p.hexClr},${isDark?.025:.018})`;
-    ctx.lineWidth = .6;
-    for (let row = -1; row < rows; row++) {
-      for (let col = -1; col < cols; col++) {
-        const cx = col * HEX_SIZE * 1.5 + (hexOffset % (HEX_SIZE*1.5)) - HEX_SIZE;
-        const cy = row * HEX_SIZE*Math.sqrt(3) + (col%2 ? HEX_SIZE*Math.sqrt(3)/2 : 0) - HEX_SIZE;
-        hexPath(cx, cy, HEX_SIZE*.9);
+    const rows = Math.ceil(H / (HEX_SIZE * 1.732)) + 2;
+    
+    ctx.strokeStyle = `rgba(${p.hexClr},${isDark ? 0.025 : 0.018})`;
+    ctx.lineWidth = 0.6;
+    
+    for (let col = -1; col < cols; col++) {
+      const offsetX = col * HEX_SIZE * 1.5 + hexOffset - HEX_SIZE;
+      const isOdd = col % 2;
+      for (let row = -1; row < rows; row++) {
+        const offsetY = row * HEX_SIZE * 1.732 + (isOdd ? HEX_SIZE * 0.866 : 0) - HEX_SIZE;
+        hexPath(offsetX, offsetY, HEX_SIZE * 0.9);
       }
     }
   }
+  
   function hexPath(cx, cy, size) {
     ctx.beginPath();
     for (let a = 0; a < 6; a++) {
-      const ang = Math.PI/3 * a - Math.PI/6;
-      const px  = cx + size * Math.cos(ang);
-      const py  = cy + size * Math.sin(ang);
-      a === 0 ? ctx.moveTo(px,py) : ctx.lineTo(px,py);
+      const x = cx + size * Math.cos(HEX_ANGLE * a - 0.523);
+      const y = cy + size * Math.sin(HEX_ANGLE * a - 0.523);
+      a === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
     }
     ctx.closePath();
     ctx.stroke();
