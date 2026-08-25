@@ -1,0 +1,473 @@
+{
+  "navbar": {
+    "brandName": "Selvaraj.dev",
+    "brandTag": "Portfolio",
+    "logoLetter": "A",
+    "navLinks": [
+      { "name": "Home", "href": "#home" },
+      { "name": "About", "href": "#about" },
+      { "name": "Projects", "href": "#projects" },
+      { "name": "Skills", "href": "#skills" },
+      { "name": "Experience", "href": "#experience" },
+      { "name": "Contact", "href": "#contact" }
+    ],
+    "cvButton": {
+      "label": "Download CV",
+      "href": "/resume.pdf",
+      "downloadFilename": "Selvaraj_Iyyappan_Resume.pdf"
+    }
+  },
+  "profile": {
+    "name": "Selvaraj Iyyappan",
+    "roleBadge": "🚀 Full Stack Python & DevOps Specialist",
+    "primaryTitle": "Full Stack Python Developer",
+    "secondaryTitle": "& DevOps Engineer",
+    "shortBio": "I architect robust Python backends (FastAPI, Django), build responsive Next.js/React frontends, and automate scalable cloud infrastructure with Docker, Kubernetes, and CI/CD pipelines.",
+    "location": "India",
+    "availableForHire": true,
+    "ctaPrimary": {
+      "label": "View My Work",
+      "href": "#projects"
+    },
+    "ctaSecondary": {
+      "label": "Contact Me",
+      "href": "#contact"
+    }
+  },
+  "metrics": [
+    {
+      "id": "projects",
+      "value": "3+",
+      "label": "Projects Completed",
+      "sublabel": "Production Web & Cloud Deployments",
+      "iconName": "FolderGit2"
+    },
+    {
+      "id": "experience",
+      "value": "2+",
+      "label": "Years Experience",
+      "sublabel": "Python & DevOps Engineering",
+      "iconName": "Trophy"
+    }
+  ],
+  "marqueeTools": [
+    {
+      "id": "python",
+      "name": "Python 3.12",
+      "category": "Backend Core",
+      "color": "#3776AB",
+      "bgColor": "#EEF5FA",
+      "badge": "Core",
+      "iconType": "python"
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "category": "High-Perf API",
+      "color": "#059669",
+      "bgColor": "#ECFDF5",
+      "badge": "Async",
+      "iconType": "fastapi"
+    },
+    {
+      "id": "django",
+      "name": "Django REST",
+      "category": "Enterprise Web",
+      "color": "#0C4B33",
+      "bgColor": "#EDF7F2",
+      "badge": "Backend",
+      "iconType": "django"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "category": "Containerization",
+      "color": "#2496ED",
+      "bgColor": "#EFF6FF",
+      "badge": "DevOps",
+      "iconType": "docker"
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "category": "Orchestration",
+      "color": "#326CE5",
+      "bgColor": "#EEF2FF",
+      "badge": "Cluster",
+      "iconType": "kubernetes"
+    },
+    {
+      "id": "aws",
+      "name": "AWS Cloud",
+      "category": "Infrastructure",
+      "color": "#FF9900",
+      "bgColor": "#FFFBEB",
+      "badge": "Cloud",
+      "iconType": "aws"
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "category": "IaC Automation",
+      "color": "#7B42BC",
+      "bgColor": "#F5F3FF",
+      "badge": "IaC",
+      "iconType": "terraform"
+    },
+    {
+      "id": "githubactions",
+      "name": "GitHub Actions",
+      "category": "CI/CD Pipeline",
+      "color": "#2088FF",
+      "bgColor": "#EFF6FF",
+      "badge": "CI/CD",
+      "iconType": "githubactions"
+    },
+    {
+      "id": "react",
+      "name": "React.js",
+      "category": "Frontend UI",
+      "color": "#087EA4",
+      "bgColor": "#F0F9FF",
+      "badge": "Client",
+      "iconType": "react"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "category": "Full Stack Web",
+      "color": "#171717",
+      "bgColor": "#F4F4F5",
+      "badge": "App Router",
+      "iconType": "nextjs"
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "category": "Relational DB",
+      "color": "#336791",
+      "bgColor": "#F0F7FF",
+      "badge": "Database",
+      "iconType": "postgresql"
+    },
+    {
+      "id": "redis",
+      "name": "Redis Cache",
+      "category": "In-Memory Queue",
+      "color": "#DC2626",
+      "bgColor": "#FEF2F2",
+      "badge": "Cache",
+      "iconType": "redis"
+    },
+    {
+      "id": "linux",
+      "name": "Linux & Bash",
+      "category": "Server OS",
+      "color": "#F59E0B",
+      "bgColor": "#FFFBEB",
+      "badge": "Systems",
+      "iconType": "linux"
+    },
+    {
+      "id": "nginx",
+      "name": "Nginx",
+      "category": "Reverse Proxy",
+      "color": "#009639",
+      "bgColor": "#ECFDF5",
+      "badge": "Gateway",
+      "iconType": "nginx"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "category": "Type Safety",
+      "color": "#3178C6",
+      "bgColor": "#EFF6FF",
+      "badge": "Language",
+      "iconType": "typescript"
+    }
+  ],
+  "about": {
+    "headline": "Engineering Scalable Backends & Automated Cloud Infrastructures",
+    "paragraphs": [
+      "I am a passionate Full Stack Python Developer & DevOps Engineer with 2+ years of hands-on experience building production-grade distributed web applications, robust asynchronous APIs, and cloud-native deployments.",
+      "My core philosophy centers on clean architecture, zero-downtime deployments, reproducible infrastructure, and delightful user experiences. Whether developing high-throughput REST/GraphQL APIs with FastAPI or orchestrating microservices on Kubernetes, I focus on performance and reliability."
+    ],
+    "highlights": [
+      {
+        "title": "Backend & API Architecture",
+        "badge": "Microservices",
+        "description": "Designing asynchronous, high-concurrency microservices and RESTful APIs using Python, FastAPI, Django, and Celery.",
+        "icon": "Server",
+        "tags": ["Python", "FastAPI", "PostgreSQL", "Celery"]
+      },
+      {
+        "title": "DevOps & CI/CD Pipelines",
+        "badge": "Automation",
+        "description": "Automating container builds, multi-stage testing, zero-downtime rolling deployments with Docker and GitHub Actions.",
+        "icon": "Layers",
+        "tags": ["Docker", "Kubernetes", "CI/CD", "IaC"]
+      },
+      {
+        "title": "Full Stack Reactive Web",
+        "badge": "Modern UI",
+        "description": "Crafting clean, responsive frontends with React, Next.js, and TypeScript that communicate seamlessly with backend services.",
+        "icon": "Layout",
+        "tags": ["Next.js", "React", "TypeScript", "Tailwind"]
+      },
+      {
+        "title": "Cloud & Reliability Engineering",
+        "badge": "Cloud Native",
+        "description": "Deploying scalable architectures on AWS, configuring Nginx reverse proxies, SSL automation, and Redis caching layers.",
+        "icon": "Cloud",
+        "tags": ["AWS", "Nginx", "Redis", "Security"]
+      }
+    ],
+    "coreValues": [
+      { "label": "Clean Architecture", "metric": "Production-Ready" },
+      { "label": "API Performance", "metric": "Sub-50ms Latency" },
+      { "label": "Deployment Uptime", "metric": "Zero-Downtime" }
+    ],
+    "philosophy": {
+      "quote": "Good software is reliable by design, automated by principle, and crafted with passion.",
+      "author": "Selvaraj Iyyappan"
+    }
+  },
+  "skills": [
+    {
+      "category": "Python & Backend Systems",
+      "description": "Server-side architecture, async computing, and data APIs",
+      "icon": "Code2",
+      "skills": [
+        { "name": "Python 3.x", "level": "Advanced", "highlight": true },
+        { "name": "FastAPI", "level": "Advanced", "highlight": true },
+        { "name": "Django & DRF", "level": "Proficient", "highlight": true },
+        { "name": "Flask", "level": "Proficient" },
+        { "name": "Celery & Redis", "level": "Proficient", "highlight": true },
+        { "name": "AsyncIO", "level": "Advanced" },
+        { "name": "REST & GraphQL", "level": "Advanced" },
+        { "name": "PyTest & TDD", "level": "Proficient" }
+      ]
+    },
+    {
+      "category": "DevOps & Cloud Infrastructure",
+      "description": "Container orchestration, automation, and cloud deployments",
+      "icon": "Cpu",
+      "skills": [
+        { "name": "Docker & Compose", "level": "Advanced", "highlight": true },
+        { "name": "Kubernetes", "level": "Proficient", "highlight": true },
+        { "name": "AWS (EC2, S3, RDS, ECS)", "level": "Proficient", "highlight": true },
+        { "name": "GitHub Actions CI/CD", "level": "Advanced", "highlight": true },
+        { "name": "Terraform (IaC)", "level": "Intermediate" },
+        { "name": "Nginx & Reverse Proxy", "level": "Proficient" },
+        { "name": "Linux / Bash Scripting", "level": "Advanced", "highlight": true },
+        { "name": "Prometheus & Grafana", "level": "Intermediate" }
+      ]
+    },
+    {
+      "category": "Frontend & Full Stack",
+      "description": "Reactive client interfaces and modern UI integration",
+      "icon": "Layout",
+      "skills": [
+        { "name": "React.js", "level": "Proficient", "highlight": true },
+        { "name": "Next.js (App Router)", "level": "Proficient", "highlight": true },
+        { "name": "TypeScript", "level": "Proficient" },
+        { "name": "Tailwind CSS v4", "level": "Advanced" },
+        { "name": "HTML5 / CSS3", "level": "Advanced" },
+        { "name": "State Management", "level": "Proficient" }
+      ]
+    },
+    {
+      "category": "Databases & Storage",
+      "description": "Data modeling, caching, transactions, and vector search",
+      "icon": "Database",
+      "skills": [
+        { "name": "PostgreSQL", "level": "Advanced", "highlight": true },
+        { "name": "Redis", "level": "Advanced", "highlight": true },
+        { "name": "SQLAlchemy & Prisma", "level": "Proficient" },
+        { "name": "MongoDB", "level": "Proficient" },
+        { "name": "Supabase", "level": "Proficient" }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Enterprise Analytics & Telemetry Engine",
+      "tagline": "Real-time stream processing & business metrics dashboard",
+      "description": "A high-concurrency analytics platform built with FastAPI and Celery to process thousands of telemetry events per second, with PostgreSQL data warehousing and a Next.js interactive UI.",
+      "category": "fullstack",
+      "tags": ["FastAPI", "Python", "Next.js", "PostgreSQL", "Redis", "Docker"],
+      "features": [
+        "Sub-50ms API response time with async task workers",
+        "Real-time WebSocket streaming analytics",
+        "Automated Docker Compose multi-container orchestrations"
+      ],
+      "metrics": "5,000+ RPS handled with 99.9% uptime",
+      "liveUrl": "https://example.com/demo-analytics",
+      "githubUrl": "https://github.com/selvaraj2003",
+      "gradient": "from-blue-500/10 to-indigo-500/10",
+      "icon": "BarChart3"
+    },
+    {
+      "id": "proj-2",
+      "title": "Cloud Kubernetes Microservices & CI/CD",
+      "tagline": "Automated multi-environment deployment pipeline",
+      "description": "Production-ready Infrastructure-as-Code and Kubernetes manifests managing Python backend services, Redis clusters, and Nginx ingress with automated GitHub Actions testing and rollback.",
+      "category": "devops",
+      "tags": ["Kubernetes", "Docker", "AWS", "GitHub Actions", "Terraform", "Nginx"],
+      "features": [
+        "Zero-downtime rolling updates with health checks",
+        "Multi-stage Docker builds reducing image sizes by 65%",
+        "Automated SSL provisioning and ingress load balancing"
+      ],
+      "metrics": "100% automated deployment in < 3 minutes",
+      "liveUrl": "https://example.com/demo-cloud",
+      "githubUrl": "https://github.com/selvaraj2003",
+      "gradient": "from-cyan-500/10 to-blue-500/10",
+      "icon": "CloudCog"
+    },
+    {
+      "id": "proj-3",
+      "title": "Scalable E-Commerce & Transaction Platform",
+      "tagline": "Robust Django REST backend with modern React storefront",
+      "description": "Full-featured e-commerce system with secure Stripe payment integration, Celery background email dispatch, transactional inventory management, and JWT authentication.",
+      "category": "fullstack",
+      "tags": ["Django", "React", "Stripe API", "PostgreSQL", "Celery", "Tailwind"],
+      "features": [
+        "Asynchronous order invoice generation & email delivery",
+        "Atomic database transactions preventing stock race conditions",
+        "Clean RESTful endpoints with comprehensive OpenAPI documentation"
+      ],
+      "metrics": "Tested with 10k concurrent simulated checkouts",
+      "liveUrl": "https://example.com/demo-store",
+      "githubUrl": "https://github.com/selvaraj2003",
+      "gradient": "from-emerald-500/10 to-teal-500/10",
+      "icon": "ShoppingBag"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp-1",
+      "role": "Full Stack Python Developer & DevOps Engineer",
+      "company": "Tech Solutions & Cloud Labs",
+      "companyUrl": "https://github.com/selvaraj2003",
+      "location": "Remote / On-site",
+      "period": "2024 - Present",
+      "isCurrent": true,
+      "type": "Full-time",
+      "description": "Architecting scalable Python microservices, maintaining cloud infrastructure, and building customer-facing dashboard interfaces.",
+      "highlights": [
+        "Developed high-performance asynchronous REST endpoints with FastAPI, cutting latency by 40%.",
+        "Configured GitHub Actions CI/CD pipelines deploying Docker containers directly to AWS EC2 & ECS.",
+        "Integrated Celery background workers with Redis queue for heavy data transformations."
+      ],
+      "techStack": ["Python", "FastAPI", "Docker", "AWS", "PostgreSQL", "Next.js", "Redis", "GitHub Actions"]
+    },
+    {
+      "id": "exp-2",
+      "role": "Python Backend & Cloud Associate",
+      "company": "Digital Innovations Group",
+      "companyUrl": "https://github.com/selvaraj2003",
+      "location": "India",
+      "period": "2023 - 2024",
+      "isCurrent": false,
+      "type": "Full-time",
+      "description": "Built backend API endpoints with Django REST Framework, implemented database schemas, and managed server environments.",
+      "highlights": [
+        "Engineered relational database models and optimized PostgreSQL queries with index tuning.",
+        "Containerized legacy Python services using Docker and managed Nginx proxy configurations.",
+        "Implemented secure JWT user authentication and automated test suites with PyTest."
+      ],
+      "techStack": ["Python", "Django", "PostgreSQL", "Docker", "Nginx", "Linux", "PyTest", "Git"]
+    }
+  ],
+  "contact": {
+    "badge": "Get in Touch",
+    "title": "Let's Build Something Scalable Together",
+    "subtitle": "Have a project in mind, need a full-stack Python engineer, or looking to streamline your DevOps pipelines? Reach out and I'll get back to you within 24 hours.",
+    "email": "selvaraj2003@example.com",
+    "phone": "+91 (Contact on Request)",
+    "location": "India",
+    "workingHours": "Mon - Sat: 9:00 AM - 7:00 PM IST",
+    "responseTime": "Replies within 24 hours",
+    "socials": [
+      {
+        "platform": "GitHub",
+        "username": "selvaraj2003",
+        "url": "https://github.com/selvaraj2003",
+        "icon": "Github"
+      },
+      {
+        "platform": "LinkedIn",
+        "username": "Selvaraj Iyyappan",
+        "url": "https://linkedin.com",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "Email",
+        "username": "selvaraj2003@example.com",
+        "url": "mailto:selvaraj2003@example.com",
+        "icon": "Mail"
+      }
+    ]
+  },
+  "footer": {
+    "brandName": "Portfolio",
+    "tagline": "Full Stack Python Developer & DevOps Engineer",
+    "description": "Building modern digital experiences with clean design, scalable Python architectures, and powerful cloud automation.",
+    "copyrightYear": 2026,
+    "copyrightText": "© 2026 Portfolio. All rights reserved.",
+    "designedWith": "Clean Light Theme",
+    "socials": [
+      {
+        "platform": "Twitter / X",
+        "url": "https://twitter.com",
+        "icon": "Twitter"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com",
+        "icon": "Linkedin"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/selvaraj2003",
+        "icon": "Github"
+      },
+      {
+        "platform": "Email",
+        "url": "mailto:selvaraj2003@example.com",
+        "icon": "Mail"
+      }
+    ],
+    "quickLinks": [
+      { "label": "Home", "href": "#home" },
+      { "label": "About", "href": "#about" },
+      { "label": "Projects", "href": "#projects" },
+      { "label": "Skills", "href": "#skills" },
+      { "label": "Experience", "href": "#experience" },
+      { "label": "Contact", "href": "#contact" }
+    ],
+    "services": [
+      "Full Stack Web Development",
+      "Python & FastAPI Architecture",
+      "Cloud & DevOps Solutions",
+      "Docker & Kubernetes Clusters",
+      "Database & Microservices",
+      "CI/CD Pipeline Automation"
+    ],
+    "contactInfo": {
+      "email": "selvaraj2003@example.com",
+      "phone": "+91 (Contact on Request)",
+      "location": "India",
+      "ctaLabel": "Get in Touch",
+      "ctaHref": "#contact"
+    },
+    "legalLinks": [
+      { "label": "Privacy", "href": "#" },
+      { "label": "Terms", "href": "#" },
+      { "label": "Cookies", "href": "#" }
+    ]
+  }
+}
